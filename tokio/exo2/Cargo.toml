@@ -1,0 +1,9 @@
+[package]
+name = "exo2"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest =  "0.13"
+futures = "0.3.33"
