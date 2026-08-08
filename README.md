@@ -65,9 +65,8 @@ Du **vrai full stack ultra léger**.
 > **Objectif :** Valider la gestion des routes, des extracteurs et de l'état partagé.
 
 * [x] Comprendre le routing Axum (`GET`, `POST`), les extracteurs (`Path`, `Query`, `Json`) et les réponses.
-* [x] Définir un `AppState` partagé et thread-safe (`Arc<RwLock<T>>` ou Pool BDD).
-* [x] **Exo 1 :** Créer une API basique (`/ping` et `/api/status` avec `serde`).
-* [x] **Exo 2 (CRUD) :** Créer un gestionnaire de tâches (Todos) en mémoire dans `AppState`.
+* [x] Définir un `AppState` partagé et thread-safe (`Arc<Mutex<T>>`).
+* [x] **Exo (CRUD) :** Créer un gestionnaire de tâches (Todos) en mémoire dans `AppState`.
 
 ---
 
