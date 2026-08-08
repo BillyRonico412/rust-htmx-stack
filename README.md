@@ -56,18 +56,17 @@ Du **vrai full stack ultra léger**.
 > **Objectif :** Dompter le modèle d'exécution asynchrone de Rust.
 
 * [x] Comprendre le fonctionnement d'une `Future`, du `.await` et de l'Event Loop Tokio.
-* [ ] **Exo 1 :** Écrire un script async simulant des délais avec `tokio::time::sleep`.
-* [ ] **Exo 2 :** Créer un scraper HTTP concurrent avec `reqwest` et `tokio::spawn` / `join_all`.
+* [x] **Exo 1 :** Écrire un script async simulant des délais avec `tokio::time::sleep`.
+* [x] **Exo 2 :** Créer un scraper HTTP concurrent avec `reqwest` et `tokio::spawn` / `join_all`.
 
 ---
 
 ### 🚀 Phase 2 : Premier Serveur HTTP avec Axum
 > **Objectif :** Valider la gestion des routes, des extracteurs et de l'état partagé.
 
-* [ ] Comprendre le routing Axum (`GET`, `POST`), les extracteurs (`Path`, `Query`, `Json`) et les réponses.
-* [ ] Définir un `AppState` partagé et thread-safe (`Arc<RwLock<T>>` ou Pool BDD).
-* [ ] **Exo 1 :** Créer une API basique (`/ping` et `/api/status` avec `serde`).
-* [ ] **Exo 2 (CRUD) :** Créer un gestionnaire de tâches (Todos) en mémoire dans `AppState`.
+* [x] Comprendre le routing Axum (`GET`, `POST`), les extracteurs (`Path`, `Query`, `Json`) et les réponses.
+* [x] Définir un `AppState` partagé et thread-safe (`Arc<Mutex<T>>`).
+* [x] **Exo (CRUD) :** Créer un gestionnaire de tâches (Todos) en mémoire dans `AppState`.
 
 ---
 
